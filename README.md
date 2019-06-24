@@ -3,8 +3,7 @@
 This project is an exercise in scala to read and write information in Cassandra database using Spark.
 
 
-
-* Run docker container
+## commands to run cassandra container
 
 docker run --name cassandra --network bridge -d -p 9042:9042 cassandra:3.11
 
