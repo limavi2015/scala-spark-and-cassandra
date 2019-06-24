@@ -5,14 +5,17 @@ This project is an exercise in scala to read and write information in Cassandra 
 
 
 * Run docker container
+
 docker run --name cassandra --network bridge -d -p 9042:9042 cassandra:3.11
 
 * To enter the container
+
 docker exec -it cassandra bash
 cd bin
 cqlsh
 
 * Commands
+
 CREATE KEYSPACE public WITH replication = {'class': 'SimpleStrategy','replication_factor' : 1};
 
 use public;
